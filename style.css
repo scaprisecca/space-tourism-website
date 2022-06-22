@@ -1,0 +1,99 @@
+/* --- Custom Styles --- */
+:root {
+    --space-black: #0b0d17;
+    --space-purple: #d0d6f9;
+    --space-white: #ffffff;
+    --barlow: 'Barlow Condensed', sans-serif;
+    --bellefair: 'Bellefari', serif;
+}
+
+/* Default Styles */
+
+h1 {
+    font-size: 150px;
+    font-family: var(--bellefair);
+    color: var(--space-white);
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: 100px;
+    font-family: var(--bellefair);
+}
+
+h3 {
+    font-size: 56px;
+    font-family: var(--bellefair);
+}
+
+h4 {
+    font-size: 32px;
+    font-family: var(--bellefair);
+}
+
+h5 {
+    font-size: 28px;
+    font-family: var(--barlow);
+    letter-spacing: 4.75px;
+    color: var(--space-purple);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+p {
+    font-family: var(--barlow);
+    line-height: 2;
+}
+
+/* --- Nav --- */
+.nav-container {
+    padding-top: 40px;
+}
+
+.navbar {
+    padding: 39px 165px 38px 123px;
+}
+
+.nav-link {
+    font-family: var(--barlow);
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    color: var(--space-white);
+}
+
+.circle-sm {
+    background-color: var(--space-white);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.nav-blur {
+    width: 830px;
+    height: 96px;
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+}
+
+/* --- Home Page --- */
+
+#home {
+    background-image: url(/assets/home/background-home-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#home-text {
+    max-width: 450px;
+    max-height: 382px;
+}
+
+.circle-lg {
+    border-radius: 50%;
+    height: 274px;
+    width: 274px;
+    background-color: var(--space-white);
+    font-size: 32px;
+    letter-spacing: 2px;
+}
