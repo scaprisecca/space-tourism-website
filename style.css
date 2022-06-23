@@ -7,6 +7,27 @@
     --bellefair: 'Bellefari', serif;
 }
 
+/* --- Media Queries --- */
+
+@media (min-width: 768px) {
+    
+    #home {
+        background-image: url(/assets/home/background-home-tablet.jpg);
+    }
+
+    #home-text {
+        height: 334px;
+    }
+
+    .nav-container {
+        width: calc(100% - 39px);
+    }
+
+    .nav-blur {
+        width: 450px;
+    }
+}
+
 /* Default Styles */
 
 h1 {
@@ -47,7 +68,8 @@ p {
 
 /* --- Nav --- */
 .nav-container {
-    padding-top: 40px;
+    margin-left: 55px;
+    width: calc(100% - 55px)
 }
 
 .navbar {
@@ -82,6 +104,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    padding: 40px 0px 131px 0px;
 }
 
 #home-text {
