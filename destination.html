@@ -21,43 +21,53 @@
 
     <!-- TODO: Work on mobile navigation bar (get the icon to work with toggle) -->
 
-    <main class="container-fluid d-flex flex-column align-items-center" id="destination-moon">
+    <main class="container-fluid d-flex flex-column align-items-center flex-lg-row justify-content-lg-around" id="destination-moon">
 
-        <p class="text-uppercase nav-link"><span class="destination-num pr-3">01</span>Pick Your Destination</p>
+        <div>
+            <p class="text-uppercase nav-link align-self-md-start my-md-4 ml-md-3 mb-lg-5"><span class="destination-num pr-3 font-weight-bold">01</span>Pick Your Destination</p>
 
-        <img src="/assets/destination/image-moon.webp" alt="image of the moon" class="destination-img">
+            <img src="/assets/destination/image-moon.webp" alt="image of the moon" class="destination-img">
+        </div>
 
-        <ul class="nav mb-4">
-            <li class="nav-item">
-                <a href="#" class="nav-link text-uppercase">Moon</a>
-            </li>
-
-            <li class="nav-item">
-                <a href="#" class="nav-link text-uppercase">Mars</a>
-            </li>
-
-            <li class="nav-item">
-                <a href="#" class="nav-link text-uppercase">Europa</a>
-            </li>
-
-            <li class="nav-item">
-                <a href="#" class="nav-link text-uppercase">Titan</a>
-            </li>
-        </ul>
-
-        <h1 class="mb-0">Moon</h1>
-
-        <p class="text-center text-purple">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-            regain perspective and come back refreshed. While you’re there, take in some history 
-            by visiting the Luna 2 and Apollo 11 landing sites.</p>
-
-        <div class="divider"></div>
-
-        <p class="destination-subtitle">Avg. Distance</p>
-        <p class="destination-stat">384,400 km</p>
-
-        <p class="destination-subtitle">Est. Travel Time</p>
-        <p class="destination-stat">3 days</p>
+        <div>
+            <ul class="nav mb-4 mt-md-4 mb-lg-5">
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-uppercase">Moon</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-uppercase">Mars</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-uppercase">Europa</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-uppercase">Titan</a>
+                </li>
+            </ul>
+    
+            <h1 class="mb-0 mb-md-2 mb-lg-5">Moon</h1>
+    
+            <p class="text-center text-purple text-lg-left mt-lg-3">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+                regain perspective and come back refreshed. While you’re there, take in some history 
+                by visiting the Luna 2 and Apollo 11 landing sites.</p>
+    
+            <div class="divider"></div>
+    
+            <div id="destination-stat-container" class="d-flex flex-column align-items-center flex-md-row justify-content-md-around justify-content-lg-start">
+                <div id="test" class="text-center">
+                    <p class="destination-subtitle">Avg. Distance</p>
+                    <p class="destination-stat">384,400 km</p>
+                </div>
+    
+                <div class="text-center">
+                    <p class="destination-subtitle">Est. Travel Time</p>
+                    <p class="destination-stat">3 days</p>
+                </div>
+            </div>
+        </div>
 
     </main>
 
