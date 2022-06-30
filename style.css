@@ -48,6 +48,7 @@ p {
     line-height: 25px;
     color: var(--space-white);
     max-width: 327px;
+    font-size: 15px;
 }
 
 .text-white {
@@ -67,13 +68,21 @@ p {
 }
 
 /* --- Nav --- */
-.nav-container {
-    margin-left: 55px;
-    width: calc(100% - 55px)
+
+#navbar-container {
+    padding: 24px;
 }
 
-.navbar {
+.nav-container {
+    margin-left: 24px;
+}
+
+/* .navbar {
     padding: 39px 165px 38px 123px;
+} */
+
+.navbar-toggler-icon {
+    color: #fff !important;
 }
 
 .nav-link {
@@ -85,14 +94,14 @@ p {
 
 .circle-sm {
     background-color: var(--space-white);
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 
 .nav-blur {
-    width: 830px;
-    height: 96px;
+    /* width: 830px;
+    height: 96px; */
     background-color: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(81.5485px);
 }
@@ -160,8 +169,40 @@ p {
     margin-bottom: 32px;
 }
 
+/* --- Crew Page --- */
 
+#crew {
+    background-image: url(/assets/crew/background-crew-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
 
+.crew-img {
+    width: 177px;
+    height: 222px;
+}
+
+.crew-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    opacity: 0.5;
+    margin-bottom: 8px;
+    line-height: 18px;
+}
+
+.crew-name {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.crew-description {
+    font-size: 15px;
+    text-align: center;
+}
 
 
 

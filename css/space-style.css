@@ -1,0 +1,211 @@
+
+/* -- Default Styles -- */
+
+.space-title--dark {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2.7px;
+    opacity: 0.25;
+    line-height: 19px;
+}
+
+/* -- Technology Page -- */
+
+.technology__wrapper {
+    background-image: url(/assets/technology/background-technology-mobile.jpg);
+    background-color: var(--space-black);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.technology__space-title {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.technology__hero-img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    margin-bottom: 34px;
+}
+
+.technology__slider-num-wrapper {
+    display: flex;
+    width: 152px;
+    justify-content: space-around;
+    margin-bottom: 26px;
+}
+
+.technology__slider-num {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--space-white);
+}
+
+.technology__slider-num--active {
+    background-color: var(--space-white);
+    color: var(--space-black);
+}
+
+.technology__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 24px 81px;
+}
+
+.technology__subheading {
+    font-size: 14px;
+    color: var(--space-purple);
+    letter-spacing: 2.36px;
+    text-transform: uppercase;
+    line-height: 17px;
+}
+
+.technology__heading {
+    font-size: 24px;
+    color: var(--space-white);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+.technology__text {
+    color: var(--space-purple);
+    text-align: center;
+    line-height: 25px;
+    margin: 0;
+}
+
+
+/* -- Media Queries -- */
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+ 
+
+    /* -- Technology -- */
+
+    .technology__wrapper {
+        background-image: url(/assets/technology/background-technology-tablet.jpg);
+    }
+
+    .space-title--dark {
+        font-size: 20px;
+    }
+
+    .technology__space-title {
+        font-size: 20px;
+        letter-spacing: 3.38px;
+        align-self: flex-start;
+        margin-left: 38.5px;
+        margin-bottom: 60px;
+    }
+
+    .technology__hero-img {
+        height: 310px;
+        margin-bottom: 56px;
+    }
+
+    .technology__slider-num-wrapper {
+        width: 210px;
+        height: 60px;
+        margin-bottom: 44px;
+    }
+
+    .technology__slider-num {
+        height: 58px;
+        width: 58px;
+    }
+
+    .technology__content-wrapper {
+        max-width: 458px;
+    }
+
+    .technology__subheading {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        margin-bottom: 16px;
+    }
+
+    .technology__heading {
+        font-size: 40px;
+    }
+
+    .technology__text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    h1 {
+        font-size: 150px;
+    }
+
+    p {
+        max-width: 444px;
+    }
+
+    .divider {
+        margin-top: 54px;
+        margin-bottom: 28px
+    }
+
+    /* -- Technology -- */
+
+    .technology__wrapper {
+        background-image: url(/assets/technology/background-technology-desktop.jpg);
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        ". title title title"
+        ". slider content img";
+    }
+
+    .technology__space-title {
+        font-size: 28px;
+        letter-spacing: 4.72px;
+        grid-area: title;
+    }
+
+    .technology__hero-img {
+        grid-area: img;
+        width: 515px;
+        height: 527px;
+        margin: 0;
+    }
+
+    .technology__slider-num-wrapper {
+        grid-area: slider;
+        flex-direction: column;
+    }
+    /* TODO - what is the container height for this? There is no container around circles on desktop view */
+
+    .technology__slider-num {
+        height: 80px;
+        width: 80px;
+    }
+
+    .technology__content-wrapper {
+        grid-area: content;
+    }
+
+
+}

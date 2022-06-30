@@ -17,12 +17,50 @@
 </head>
 <body>
 
-    <!-- Header / Nav goes here -->
-
-    <!-- TODO: Work on mobile navigation bar (get the icon to work with toggle) -->
-
     <main class="container-fluid d-flex flex-column align-items-center flex-lg-row justify-content-lg-around" id="destination-moon">
 
+        <!-- Navbar -->
+        <header id="navbar-container" class="d-flex">
+            <div class="circle-sm">
+                <img src="/assets/shared/logo.svg" alt="logo">
+            </div>
+    
+            <nav class="">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="/assets/shared/icon-hamburger.svg" alt="toggle">
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-uppercase">
+                                <strong class="d-md-none">00</strong> Home
+                            </a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-uppercase">
+                                <strong class="d-md-none">01</strong> Destination
+                            </a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-uppercase">
+                                <strong class="d-md-none">02</strong> Crew
+                            </a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-uppercase">
+                                <strong class="d-md-none">03</strong> Technology
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
         <div>
             <p class="text-uppercase nav-link align-self-md-start my-md-4 ml-md-3 mb-lg-5"><span class="destination-num pr-3 font-weight-bold">01</span>Pick Your Destination</p>
 
