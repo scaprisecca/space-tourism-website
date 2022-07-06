@@ -9,6 +9,26 @@
     line-height: 19px;
 }
 
+/* -- Navbar -- */
+
+.navbar__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 24px 24px 0;
+}
+
+.navbar__logo {
+    height: 40px;
+    width: 40px;
+}
+
+.navbar__toggle {
+    height: 21px;
+    width: 24px;
+}
+
 /* -- Technology Page -- */
 
 .technology__wrapper {
@@ -22,7 +42,7 @@
     align-items: center;
 }
 
-.technology__space-title {
+.space-title {
     font-size: 16px;
     letter-spacing: 2.7px;
     text-transform: uppercase;
@@ -34,6 +54,10 @@
     height: 170px;
     object-fit: cover;
     margin-bottom: 34px;
+}
+
+.technology__desktop-hero-img {
+    display: none;
 }
 
 .technology__slider-num-wrapper {
@@ -75,7 +99,7 @@
 }
 
 .technology__heading {
-    font-size: 24px;
+    font-size: 28px;
     color: var(--space-white);
     text-transform: uppercase;
     margin-bottom: 16px;
@@ -109,7 +133,7 @@
         font-size: 20px;
     }
 
-    .technology__space-title {
+    .space-title {
         font-size: 20px;
         letter-spacing: 3.38px;
         align-self: flex-start;
@@ -179,33 +203,69 @@
         ". slider content img";
     }
 
-    .technology__space-title {
+    .space-title {
         font-size: 28px;
         letter-spacing: 4.72px;
         grid-area: title;
+        align-self: flex-end;
+        margin-bottom: 0px;
+    }
+
+    .space-title--dark {
+        font-size: 28px;
     }
 
     .technology__hero-img {
+        display: none;
+    }
+
+    .technology__desktop-hero-img {
         grid-area: img;
+        display: block;
         width: 515px;
         height: 527px;
         margin: 0;
+        justify-self: end;
     }
 
     .technology__slider-num-wrapper {
         grid-area: slider;
         flex-direction: column;
+        height: 277px;
+        align-items: flex-end;
+        margin-bottom: 0;
     }
     /* TODO - what is the container height for this? There is no container around circles on desktop view */
 
     .technology__slider-num {
         height: 80px;
         width: 80px;
+        margin-bottom: 32px;
     }
 
     .technology__content-wrapper {
         grid-area: content;
+        justify-self: start;
+        align-items: flex-start;
+        max-width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .technology__heading {
+        font-size: 56px;
+    }
+
+    .technology__text {
+        text-align: left;
+        font-size: 18px;
+        line-height: 32px;
     }
 
 
+}
+
+@media (min-width: 1600px) {
+
+
+    
 }
