@@ -1,6 +1,10 @@
 
 /* -- Default Styles -- */
 
+body {
+    margin: 0;
+}
+
 .space-title--dark {
     font-size: 16px;
     font-weight: bold;
@@ -16,17 +20,68 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 24px 24px 0;
+    margin: 24px 0 0 0;
+}
+
+.navbar--blur {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+}
+
+.navbar__spacer {
+    display: none;
 }
 
 .navbar__logo {
     height: 40px;
     width: 40px;
+    margin-left: 24px;
 }
 
 .navbar__toggle {
     height: 21px;
     width: 24px;
+    margin-right: 24px;
+}
+
+.navbar__close-icon {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 34px;
+    right: 26.5px;
+}
+
+.navbar__item {
+    text-transform: uppercase;
+    list-style-type: none;
+    margin-bottom: 32px;
+    letter-spacing: 2.7px;
+}
+
+.navbar__link {
+    color: var(--space-white);
+    text-decoration: none;
+}
+
+.navbar__link--bold {
+    display: inline;
+    margin-right: 12px;
+}
+
+.navbar {
+    position: fixed;
+    width: 67%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    padding-left: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
 }
 
 /* -- Technology Page -- */
@@ -37,6 +92,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +102,15 @@
     font-size: 16px;
     letter-spacing: 2.7px;
     text-transform: uppercase;
+    margin-top: 24px;
     margin-bottom: 32px;
+}
+
+/* Reordering the content blocks for mobile. Had to add display:flex to allow order property to work */
+
+.technology__content-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .technology__hero-img {
@@ -54,6 +118,7 @@
     height: 170px;
     object-fit: cover;
     margin-bottom: 34px;
+    order: 1;
 }
 
 .technology__desktop-hero-img {
@@ -64,7 +129,8 @@
     display: flex;
     width: 152px;
     justify-content: space-around;
-    margin-bottom: 26px;
+    margin: 0 auto 26px;
+    order: 2;
 }
 
 .technology__slider-num {
@@ -83,11 +149,12 @@
     color: var(--space-black);
 }
 
-.technology__content-wrapper {
+.technology__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0px 24px 81px;
+    order: 3;
 }
 
 .technology__subheading {
@@ -122,6 +189,49 @@
 
 @media (min-width: 768px) {
  
+    /* -- navbar -- */
+
+    .navbar {
+        display: flex;
+        width: 450px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 48px;
+    }
+
+    .navbar--blur {
+        height: 100%;
+        max-height: 96px;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(81.5485px);
+    }
+
+    .navbar__wrapper {
+        height: 96px;
+        width: calc(100% - 39px);
+        margin-left: 39px;
+        margin-top: 0;
+    }
+
+    .navbar__toggle {
+        display: none;
+    }
+
+    .navbar__item {
+        list-style: none;
+        letter-spacing: 2.36px;
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .navbar__link {
+        color: var(--space-white);
+        text-decoration: none;
+    }
+
+    .navbar__link--bold {
+        display: none;
+    }
 
     /* -- Technology -- */
 
@@ -158,6 +268,10 @@
     }
 
     .technology__content-wrapper {
+        align-items: center;
+    }
+
+    .technology__content {
         max-width: 458px;
     }
 
@@ -192,27 +306,72 @@
         margin-bottom: 28px
     }
 
+    /* -- Nav -- */
+
+    .navbar__wrapper {
+        margin: 40px 0 76px 55px;
+        padding: 0px;
+        width: calc(100% - 55px);
+        position: relative;
+    }
+
+    .navbar__spacer {
+        display: block;
+        height: 1px;
+        width: 473px;
+        background-color: var(--space-white);
+        opacity: 0.25;
+        position: absolute;
+        left: 95px;
+        z-index: 10;
+    }
+
+    .navbar {
+        height: 96px;
+        width: 830px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar__item {
+        padding-right: 48px;
+        font-size: 16px;
+    }
+
+    .navbar__item:last-child {
+        padding-right: 0;
+    }
+
+    .navbar__link--bold {
+        display: inline;
+        font-weight: bold;
+        margin-right: 12px;
+    }
+
     /* -- Technology -- */
 
     .technology__wrapper {
         background-image: url(/assets/technology/background-technology-desktop.jpg);
-        height: 100vh;
-        display: grid;
-        grid-template-areas: 
-        ". title title title"
-        ". slider content img";
+        height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     .space-title {
         font-size: 28px;
         letter-spacing: 4.72px;
-        grid-area: title;
-        align-self: flex-end;
-        margin-bottom: 0px;
+        align-self: flex-start;
+        justify-self: end;
+        margin: 0 0 0 166.5px; 
     }
 
     .space-title--dark {
         font-size: 28px;
+    }
+
+    .technology__content-wrapper {
+        flex-direction: row;
+        width: 100%;
     }
 
     .technology__hero-img {
@@ -224,8 +383,8 @@
         display: block;
         width: 515px;
         height: 527px;
-        margin: 0;
-        justify-self: end;
+        margin: 0 0 0 auto;
+        order: 0;
     }
 
     .technology__slider-num-wrapper {
@@ -234,8 +393,14 @@
         height: 277px;
         align-items: flex-end;
         margin-bottom: 0;
+        flex-basis: 247px;
+        order: 0;
     }
     /* TODO - what is the container height for this? There is no container around circles on desktop view */
+
+    .technology__slider-num-wrapper:last-child {
+        margin-bottom: none;
+    }
 
     .technology__slider-num {
         height: 80px;
@@ -243,16 +408,19 @@
         margin-bottom: 32px;
     }
 
-    .technology__content-wrapper {
-        grid-area: content;
-        justify-self: start;
+    
+
+    .technology__content {
         align-items: flex-start;
+        flex-basis: 486px;
         max-width: 100%;
-        margin-bottom: 0px;
+        margin: 0 0 0 80px;
+        order: 0;
     }
 
     .technology__heading {
         font-size: 56px;
+        margin: 11px 0 17px 0;
     }
 
     .technology__text {
