@@ -5,6 +5,14 @@ body {
     margin: 0;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
 .space-title--dark {
     font-size: 16px;
     font-weight: bold;
@@ -70,6 +78,8 @@ body {
     margin-right: 12px;
 }
 
+/* TODO - add transition properties to the navbar for mobile view */
+
 .navbar {
     position: fixed;
     width: 67%;
@@ -81,13 +91,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    display: none;
 }
 
 /* -- Technology Page -- */
 
 .technology__wrapper {
-    background-image: url(/assets/technology/background-technology-mobile.jpg);
+    background-image: url(assets/technology/background-technology-mobile.jpg);
     background-color: var(--space-black);
     background-repeat: no-repeat;
     background-size: cover;
@@ -193,6 +202,7 @@ body {
 
     .navbar {
         display: flex;
+        flex-direction: row;
         width: 450px;
         justify-content: space-between;
         align-items: center;
@@ -217,11 +227,16 @@ body {
         display: none;
     }
 
+    .navbar__close-icon {
+        display: none;
+    }
+
     .navbar__item {
         list-style: none;
         letter-spacing: 2.36px;
         font-size: 14px;
         padding: 0;
+        margin: 0;
     }
 
     .navbar__link {
