@@ -1,1 +1,88 @@
-/* -- Default Styles -- */)
+/* -- Default Styles -- */
+
+
+
+.home__wrapper {
+    background-image: url('/assets/home/background-home-mobile.jpg');
+    background-color: var(--space-black);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.home__content-wrapper {
+    text-align: center;
+    margin: 48px 0 81px;
+    max-width: 327px;
+}
+
+.home__subheading {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    color: var(--space-purple);
+    margin: 0 0 16px;
+}
+
+.home__heading {
+    margin: 0 0 16px;
+    font-size: 80px;
+    line-height: 100px;
+    font-weight: 400;
+}
+
+.home__content {
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--space-purple);
+    margin: 0;
+}
+
+.home__button {
+    --button-size: 150px;
+    height: var(--button-size);
+    width: var(--button-size);
+    border: 1px solid var(--space-white);
+    border-radius: 50%;
+}
+
+.home__button--hover {
+    --button-hover-size: 241.5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: var(--button-hover-size);
+    width: var(--button-hover-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-bottom: 48px;
+}
+
+.home__button p {
+    color: var(--space-black);
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    font-size: 20px;
+}
+
+/* -- Tablet sized devices -- */
+
+@media (min-width: 768px) {
+
+    
+
+}
+
+
+/* -- Desktop Devices -- */
+
+@media (min-width: 960px) {
+
+
+
+}

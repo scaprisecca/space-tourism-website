@@ -96,7 +96,7 @@ body {
 /* -- Technology Page -- */
 
 .technology__wrapper {
-    background-image: url(assets/technology/background-technology-mobile.jpg);
+    background-image: url("assets/technology/background-technology-mobile.jpg");
     background-color: var(--space-black);
     background-repeat: no-repeat;
     background-size: cover;

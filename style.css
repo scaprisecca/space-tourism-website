@@ -10,6 +10,18 @@
 
 /* Default Styles */
 
+body {
+    margin: 0;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
 h1 {
     font-size: 56px;
     font-family: var(--bellefair);
