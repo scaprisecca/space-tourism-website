@@ -4,7 +4,8 @@
     --space-purple: #d0d6f9;
     --space-white: #ffffff;
     --barlow: 'Barlow Condensed', sans-serif;
-    --bellefair: 'Bellefari', serif;
+    --bellefair: 'Bellefair', serif;
+    --desktop-vh: calc(100vh - 96px);
 }
 
 
@@ -22,6 +23,22 @@ body {
     visibility: visible;
 }
 
+.space-title {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    margin: 24px 0 32px;
+}
+
+.space-title--dark {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2.7px;
+    opacity: 0.25;
+    line-height: 19px;
+    margin-right: 16px;
+}
+
 h1 {
     font-size: 56px;
     font-family: var(--bellefair);
@@ -29,21 +46,25 @@ h1 {
     margin-bottom: 24px;
     line-height: 64px;
     text-transform: uppercase;
+    font-weight: 400;
 }
 
 h2 {
     font-size: 100px;
     font-family: var(--bellefair);
+    font-weight: 400;
 }
 
 h3 {
     font-size: 56px;
     font-family: var(--bellefair);
+    font-weight: 400;
 }
 
 h4 {
     font-size: 32px;
     font-family: var(--bellefair);
+    font-weight: 400;
 }
 
 h5 {
@@ -53,6 +74,7 @@ h5 {
     color: var(--space-purple);
     text-transform: uppercase;
     margin-bottom: 24px;
+    font-weight: 400;
 }
 
 p {
@@ -63,14 +85,6 @@ p {
     font-size: 15px;
 }
 
-.text-white {
-    color: var(--space-white);
-}
-
-.text-purple {
-    color: var(--space-purple);
-}
-
 .divider {
     height: 1px;
     width: 327px;
@@ -78,70 +92,6 @@ p {
     margin-bottom: 32px;
     margin-top: 16px;
 }
-
-/* --- Nav --- */
-
-#navbar-container {
-    padding: 24px;
-}
-
-.nav-container {
-    margin-left: 24px;
-}
-
-/* .navbar {
-    padding: 39px 165px 38px 123px;
-} */
-
-.navbar-toggler-icon {
-    color: #fff !important;
-}
-
-.nav-link {
-    font-family: var(--barlow);
-    font-size: 16px;
-    letter-spacing: 2.7px;
-    color: var(--space-white);
-}
-
-.circle-sm {
-    background-color: var(--space-white);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.nav-blur {
-    /* width: 830px;
-    height: 96px; */
-    background-color: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(81.5485px);
-}
-
-/* --- Home Page --- */
-
-#home {
-    background-image: url(/assets/home/background-home-desktop.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    padding: 40px 0px 131px 0px;
-}
-
-#home-text {
-    max-width: 450px;
-    max-height: 382px;
-}
-
-.circle-lg {
-    border-radius: 50%;
-    height: 274px;
-    width: 274px;
-    background-color: var(--space-white);
-    font-size: 32px;
-    letter-spacing: 2px;
-}
-
 
 /* --- Destination Pages --- */
 
@@ -181,42 +131,6 @@ p {
     margin-bottom: 32px;
 }
 
-/* --- Crew Page --- */
-
-#crew {
-    background-image: url(/assets/crew/background-crew-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-
-.crew-img {
-    width: 177px;
-    height: 222px;
-}
-
-.crew-title {
-    text-transform: uppercase;
-    font-size: 16px;
-    opacity: 0.5;
-    margin-bottom: 8px;
-    line-height: 18px;
-}
-
-.crew-name {
-    font-size: 24px;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-    line-height: 28px;
-    text-align: center;
-}
-
-.crew-description {
-    font-size: 15px;
-    text-align: center;
-}
-
-
 
 /* --- Media Queries --- */
 
@@ -233,6 +147,18 @@ p {
 
     .divider {
         width: 573px;
+    }
+
+    .space-title--dark {
+        font-size: 20px;
+    }
+
+    .space-title {
+        font-size: 20px;
+        letter-spacing: 3.38px;
+        align-self: flex-start;
+        margin-left: 38.5px;
+        margin-bottom: 60px;
     }
 
 
@@ -275,9 +201,26 @@ p {
         max-width: 444px;
     }
 
+    .lg-hide {
+        display: none;
+        visibility: hidden;
+    }
+
     .divider {
         margin-top: 54px;
         margin-bottom: 28px
+    }
+
+    .space-title {
+        font-size: 28px;
+        letter-spacing: 4.72px;
+        align-self: flex-start;
+        justify-self: end;
+        margin: 0 0 0 166.5px; 
+    }
+
+    .space-title--dark {
+        font-size: 28px;
     }
 
     /* Destination Pages */

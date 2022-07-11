@@ -1,0 +1,189 @@
+
+
+/* --- Crew Page --- */
+
+.crew__wrapper {
+    background-image: url(/assets/crew/background-crew-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crew__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crew__image-wrapper {
+    margin-bottom: 32px;
+    width: 327px;
+    border-bottom: 1px solid #383B4B;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.crew__image {
+    width: 177px;
+    height: 222px;
+}
+
+.crew__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crew__slider-wrapper {
+    width: 88px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.crew__slider-icon {
+    height: 10px;
+    width: 10px;
+    background-color: var(--space-white);
+    opacity: 0.17;
+    border-radius: 50%;
+}
+
+.crew__slider-icon--active {
+    opacity: 1;
+}
+
+.crew__subheading {
+    text-transform: uppercase;
+    font-size: 16px;
+    opacity: 0.5;
+    margin-top: 0;
+    margin-bottom: 8px;
+    line-height: 18px;
+    font-family: var(--bellefair);
+}
+
+.crew__heading {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 16px;
+    text-align: center;
+    color: var(--space-white);
+}
+
+.crew__text {
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    color: var(--space-purple);
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+
+    .crew__wrapper {
+        background-image: url('/assets/crew/background-crew-tablet.jpg');
+    }
+
+    .crew__content-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .crew__slider-wrapper {
+        order: 2;
+    }
+
+    .crew__content {
+        order: 1;
+        max-width: 458px;
+    }
+
+    .crew__subheading {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .crew__heading {
+        font-size: 40px;
+    }
+
+    .crew__text {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 40px;
+    }
+
+    .crew__image-wrapper {
+        border: none;
+        margin-bottom: 0;
+    }
+
+    .crew__image {
+        width: 456px;
+        height: 572px;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .crew-space-title {
+        visibility: visible;
+        justify-self: start;
+        margin: 0 0 auto 0;
+    }
+
+    .crew__wrapper {
+        background-image: url('/assets/crew/background-crew-desktop.jpg');
+        height: 100vh;
+    }
+
+    .crew__content-wrapper {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .crew__slider-wrapper {
+        width: 132px;
+        justify-self: flex-end;
+        margin-top: auto;
+    }
+
+    .crew__slider-icon {
+        width: 15px;
+        height: 15px;
+    }
+
+    .crew__content {
+        align-items: flex-start;
+        max-width: 600px;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .crew__subheading {
+        font-size: 32px;
+    }
+
+    .crew__heading {
+        font-size: 56px;
+        margin-bottom: 27px;
+    }
+
+    .crew__text {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .crew__image {
+        width: 735px;
+        height: 712px;
+    }
+
+}

@@ -1,98 +1,4 @@
 
-/* -- Default Styles -- */
-
-body {
-    margin: 0;
-}
-
-.hidden {
-    visibility: hidden;
-}
-
-.visible {
-    visibility: visible;
-}
-
-.space-title--dark {
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 2.7px;
-    opacity: 0.25;
-    line-height: 19px;
-}
-
-/* -- Navbar -- */
-
-.navbar__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 24px 0 0 0;
-}
-
-.navbar--blur {
-    height: 100%;
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(81.5485px);
-}
-
-.navbar__spacer {
-    display: none;
-}
-
-.navbar__logo {
-    height: 40px;
-    width: 40px;
-    margin-left: 24px;
-}
-
-.navbar__toggle {
-    height: 21px;
-    width: 24px;
-    margin-right: 24px;
-}
-
-.navbar__close-icon {
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    top: 34px;
-    right: 26.5px;
-}
-
-.navbar__item {
-    text-transform: uppercase;
-    list-style-type: none;
-    margin-bottom: 32px;
-    letter-spacing: 2.7px;
-}
-
-.navbar__link {
-    color: var(--space-white);
-    text-decoration: none;
-}
-
-.navbar__link--bold {
-    display: inline;
-    margin-right: 12px;
-}
-
-/* TODO - add transition properties to the navbar for mobile view */
-
-.navbar {
-    position: fixed;
-    width: 67%;
-    height: 100vh;
-    top: 0;
-    right: 0;
-    margin-top: 0;
-    padding-left: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 /* -- Technology Page -- */
 
 .technology__wrapper {
@@ -107,13 +13,7 @@ body {
     align-items: center;
 }
 
-.space-title {
-    font-size: 16px;
-    letter-spacing: 2.7px;
-    text-transform: uppercase;
-    margin-top: 24px;
-    margin-bottom: 32px;
-}
+
 
 /* Reordering the content blocks for mobile. Had to add display:flex to allow order property to work */
 
@@ -197,73 +97,9 @@ body {
 }
 
 @media (min-width: 768px) {
- 
-    /* -- navbar -- */
-
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        width: 450px;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 48px;
-    }
-
-    .navbar--blur {
-        height: 100%;
-        max-height: 96px;
-        background: rgba(255, 255, 255, 0.04);
-        backdrop-filter: blur(81.5485px);
-    }
-
-    .navbar__wrapper {
-        height: 96px;
-        width: calc(100% - 39px);
-        margin-left: 39px;
-        margin-top: 0;
-    }
-
-    .navbar__toggle {
-        display: none;
-    }
-
-    .navbar__close-icon {
-        display: none;
-    }
-
-    .navbar__item {
-        list-style: none;
-        letter-spacing: 2.36px;
-        font-size: 14px;
-        padding: 0;
-        margin: 0;
-    }
-
-    .navbar__link {
-        color: var(--space-white);
-        text-decoration: none;
-    }
-
-    .navbar__link--bold {
-        display: none;
-    }
-
-    /* -- Technology -- */
 
     .technology__wrapper {
         background-image: url(/assets/technology/background-technology-tablet.jpg);
-    }
-
-    .space-title--dark {
-        font-size: 20px;
-    }
-
-    .space-title {
-        font-size: 20px;
-        letter-spacing: 3.38px;
-        align-self: flex-start;
-        margin-left: 38.5px;
-        margin-bottom: 60px;
     }
 
     .technology__hero-img {
@@ -308,61 +144,6 @@ body {
 
 @media (min-width: 992px) {
 
-    h1 {
-        font-size: 150px;
-    }
-
-    p {
-        max-width: 444px;
-    }
-
-    .divider {
-        margin-top: 54px;
-        margin-bottom: 28px
-    }
-
-    /* -- Nav -- */
-
-    .navbar__wrapper {
-        margin: 40px 0 76px 55px;
-        padding: 0px;
-        width: calc(100% - 55px);
-        position: relative;
-    }
-
-    .navbar__spacer {
-        display: block;
-        height: 1px;
-        width: 473px;
-        background-color: var(--space-white);
-        opacity: 0.25;
-        position: absolute;
-        left: 95px;
-        z-index: 10;
-    }
-
-    .navbar {
-        height: 96px;
-        width: 830px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .navbar__item {
-        padding-right: 48px;
-        font-size: 16px;
-    }
-
-    .navbar__item:last-child {
-        padding-right: 0;
-    }
-
-    .navbar__link--bold {
-        display: inline;
-        font-weight: bold;
-        margin-right: 12px;
-    }
-
     /* -- Technology -- */
 
     .technology__wrapper {
@@ -372,17 +153,7 @@ body {
         flex-direction: column;
     }
 
-    .space-title {
-        font-size: 28px;
-        letter-spacing: 4.72px;
-        align-self: flex-start;
-        justify-self: end;
-        margin: 0 0 0 166.5px; 
-    }
-
-    .space-title--dark {
-        font-size: 28px;
-    }
+    
 
     .technology__content-wrapper {
         flex-direction: row;
