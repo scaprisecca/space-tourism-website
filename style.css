@@ -3,7 +3,8 @@
     --space-black: #0b0d17;
     --space-purple: #d0d6f9;
     --space-white: #ffffff;
-    --barlow: 'Barlow Condensed', sans-serif;
+    --barlow: 'Barlow', sans-serif;
+    --barlow-condensed: 'Barlow Condensed', sans-serif;
     --bellefair: 'Bellefair', serif;
     --desktop-vh: calc(100vh - 96px);
 }
