@@ -15,7 +15,7 @@
 }
 
 
-.home__content-wrapper {
+.home__content {
     text-align: center;
     margin: 48px 0 81px;
     max-width: 327px;
@@ -35,7 +35,7 @@
     font-weight: 400;
 }
 
-.home__content {
+.home__text {
     font-size: 15px;
     line-height: 25px;
     color: var(--space-purple);
@@ -78,7 +78,7 @@
         background-image: url('/assets/home/background-home-tablet.jpg');
     }
 
-    .home__content-wrapper {
+    .home__content {
         margin: 106px 0 156px;
         max-width: 450px;
     }
@@ -95,7 +95,7 @@
         margin-bottom: 24px;
     }
 
-    .home__content {
+    .home__text {
         font-size: 16px;
         line-height: 28px;
     }
@@ -123,12 +123,17 @@
     .home__wrapper {
         background-image: url('/assets/home/background-home-desktop.jpg');
         min-height: 100vh;
-        flex-direction: row;
+        /* flex-direction: row;
         justify-content: center;
-        align-items: flex-end;
+        align-items: flex-end; */
     }
 
     .home__content-wrapper {
+        display: flex;
+        margin-top: auto;
+    }
+
+    .home__content {
         text-align: left;
         margin-right: 192px;
     }
@@ -142,7 +147,7 @@
         letter-spacing: 4.72px;
     }
 
-    .home__content {
+    .home__text {
         font-size: 18px;
         line-height: 32px;
     }
@@ -158,6 +163,7 @@
         height: var(--button-hover-size);
         width: var(--button-hover-size);
         margin-left: 192px;
+        align-self: flex-end;
     }
 
     .home__button p {

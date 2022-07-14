@@ -83,6 +83,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 48px;
+        visibility: visible;
     }
 
     .navbar--blur {
@@ -114,16 +115,24 @@
         padding: 0;
         margin: 0;
     }
-
+    
     .navbar__link {
         color: var(--space-white);
         text-decoration: none;
     }
-
+    
     .navbar__link--bold {
         display: none;
     }
+    
+    .navbar__link:hover{
+        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+        padding-bottom: 39px;
+    }
 
+    .navbar__link:active {
+        border-bottom: 3px solid var(--space-white);
+    }
 }
 
 @media (min-width: 992px) {

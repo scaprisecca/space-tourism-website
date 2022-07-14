@@ -21,6 +21,7 @@ function hideMobileNav() {
 navToggle.addEventListener('click', showMobileNav);
 navCloseIcon.addEventListener('click', hideMobileNav);
 
+
 // Shows hover effect for home page button
 function showHomeButtonHover() {
   homeButtonHover.classList.remove('hidden');
@@ -34,7 +35,6 @@ function hideHomeButtonHover() {
 }
 
 // homeButton.addEventListener('mouseover', showHomeButtonHover);
-console.log(homeButton);
 homeButton.addEventListener('mouseover', showHomeButtonHover);
 homeButton.addEventListener('mouseleave', hideHomeButtonHover);
 
@@ -56,9 +56,19 @@ function getDistanceBetweenElements(a, b) {
   return Math.hypot(aPosition.x - bPosition.x, aPosition.y - bPosition.y);
 }
 
-const navbarDistance = getDistanceBetweenElements(
+let navbarDistance = getDistanceBetweenElements(
   document.querySelector('.navbar__logo'),
   document.querySelector('.navbar')
 );
 
-console.log(navbarDistance);
+console.log(`navbar: ${navbarDistance}`);
+
+const size = window.innerWidth;
+
+window.addEventListener('resize', function() {
+  console.log(`window: ${size}`)
+})
+
+// IDEAS
+// Track window width - when it adjusts, run this function again to set the size of the divder in the navbar
+// OR somehow just update the variable directly

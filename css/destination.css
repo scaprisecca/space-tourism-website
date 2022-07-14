@@ -1,7 +1,7 @@
 
 .destination__wrapper {
     background-color: var(--space-black);
-    background-image: url('assets/destination/background-destination-mobile.png');
+    background-image: url('/assets/destination/background-destination-mobile.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -101,7 +101,7 @@
     .destination__wrapper {
         min-height: 100vh;
         height: 100%;
-        background-image: url('assets/destination/background-destination-tablet.png');
+        background-image: url('/assets/destination/background-destination-tablet.jpg');
     }
 
     .destination__image {
@@ -139,13 +139,21 @@
 @media (min-width: 992px) {
 
     .destination__wrapper {
-        background-image: url('assets/destination/background-destination-desktop.jpg');
+        background-image: url('/assets/destination/background-destination-desktop.jpg');
+        
+    }
+
+    .space-title {
+        max-width: 100%;
     }
 
     .destination__content-wrapper {
         flex-direction: row;
         width: 100%;
         justify-content: space-around;
+        align-self: center;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     .destination__content {
@@ -176,10 +184,11 @@
 
     .destination__stats {
         justify-content: flex-start;
+        margin-bottom: 112px;
     }
 
-    .destination__stats:first-child {
-        margin-right: 79px;  /* TODO need to fix this, margin is not showing */
+    .destination__stats div:first-child {
+        margin-right: 79px;
     }
 
     .destination__stat-label, .destination__stat {
