@@ -21,22 +21,30 @@ function hideMobileNav() {
 navToggle.addEventListener('click', showMobileNav);
 navCloseIcon.addEventListener('click', hideMobileNav);
 
+function homeButtonHoverEffect() {
 
-// Shows hover effect for home page button
-function showHomeButtonHover() {
-  homeButtonHover.classList.remove('hidden');
-  homeButtonHover.classList.add('visible');
+  if(!homeButton) {
+    return; // checks if the home button is on the page before running
+  }
+  // Shows hover effect for home page button
+  function showHomeButtonHover() {
+    homeButtonHover.classList.remove('hidden');
+    homeButtonHover.classList.add('visible');
+  }
+
+  // Hides hover effect for home page button
+  function hideHomeButtonHover() {
+    homeButtonHover.classList.remove('visible');
+    homeButtonHover.classList.add('hidden');
+  }
+
+  // homeButton.addEventListener('mouseover', showHomeButtonHover);
+  homeButton.addEventListener('mouseover', showHomeButtonHover);
+  homeButton.addEventListener('mouseleave', hideHomeButtonHover);
+
 }
 
-// Hides hover effect for home page button
-function hideHomeButtonHover() {
-  homeButtonHover.classList.remove('visible');
-  homeButtonHover.classList.add('hidden');
-}
-
-// homeButton.addEventListener('mouseover', showHomeButtonHover);
-homeButton.addEventListener('mouseover', showHomeButtonHover);
-homeButton.addEventListener('mouseleave', hideHomeButtonHover);
+homeButtonHoverEffect();
 
 // Calculate distance between nav-logo and nav-links to determine
 // the length for the divider on desktop and tablet devices
@@ -72,3 +80,8 @@ window.addEventListener('resize', function() {
 // IDEAS
 // Track window width - when it adjusts, run this function again to set the size of the divder in the navbar
 // OR somehow just update the variable directly
+
+
+const ob = new ResizeObserver();
+
+ob.observe(navbarDistance);

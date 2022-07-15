@@ -82,7 +82,7 @@ p {
     font-family: var(--barlow);
     line-height: 25px;
     color: var(--space-white);
-    max-width: 327px;
+    max-width: 345px;
     font-size: 15px;
 }
 
@@ -94,45 +94,6 @@ p {
     margin-top: 16px;
 }
 
-/* --- Destination Pages --- */
-
-#destination-moon {
-    background-image: url(/assets/destination/background-destination-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #0b0d17;
-    height: 100%;
-}
-
-.destination-num {
-    font-weight: 700;
-    letter-spacing: 2.7px;
-    line-height: 19px;
-    color: var(--space-white);
-    opacity: 0.25;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.destination-img {
-    height: 170px;
-    width: 170px;
-    margin: 16px 0px 26px;
-}
-
-.destination-subtitle {
-    color: var(--space-purple);
-    letter-spacing: 2.36px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-}
-
-.destination-stat {
-    font-size: 28px;
-    text-transform: uppercase;
-    margin-bottom: 32px;
-}
-
-
 /* --- Media Queries --- */
 
 @media (min-width: 576px) {
@@ -142,7 +103,6 @@ p {
 @media (min-width: 768px) {
     
     p {
-        max-width: 573px;
         line-height: 28px;
     }
 
@@ -162,34 +122,6 @@ p {
         margin-bottom: 60px;
     }
 
-
-    #home {
-        background-image: url(/assets/home/background-home-tablet.jpg);
-    }
-
-    #home-text {
-        height: 334px;
-    }
-
-    .nav-container {
-        width: calc(100% - 39px);
-    }
-
-    .nav-blur {
-        width: 450px;
-    }
-
-    /* Destination Pages */
-
-    #destination-stat-container {
-        width: 573px;
-    }
-
-    .destination-img {
-        width: 300px;
-        height: 300px;
-    }
-
 }
 
 @media (min-width: 992px) {
@@ -199,7 +131,7 @@ p {
     }
 
     p {
-        max-width: 444px;
+        max-width: 573px;
     }
 
     .lg-hide {
@@ -218,33 +150,11 @@ p {
         align-self: flex-start;
         justify-self: end;
         margin: 0 0 0 166.5px; 
+        font-family: var(--barlow-condensed);
     }
 
     .space-title--dark {
         font-size: 28px;
     }
-
-    /* Destination Pages */
-
-    #destination-moon {
-        height: 100vh;
-        background-image: url(/assets/destination/background-destination-desktop.jpg);
-    }
-
-    #destination-stat-container div:first-child {
-        margin-right: 79px;
-    }
-
-    #destination-moon .nav-link:first-child {
-        padding-left: 0;
-    }
-
-    #destination-moon p:first-child {
-        font-size: 28px;
-    }
-
-    .destination-img {
-        height: 445px;
-        width: 445px;
-    }
+    
 }

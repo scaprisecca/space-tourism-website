@@ -2,10 +2,11 @@
 /* -- Technology Page -- */
 
 .technology__wrapper {
-    background-image: url("assets/technology/background-technology-mobile.jpg");
+    background-image: url("../assets/technology/background-technology-mobile.jpg");
     background-color: var(--space-black);
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
     height: 100%;
     width: 100%;
     display: flex;
@@ -99,7 +100,7 @@
 @media (min-width: 768px) {
 
     .technology__wrapper {
-        background-image: url(/assets/technology/background-technology-tablet.jpg);
+        background-image: url(../assets/technology/background-technology-tablet.jpg);
     }
 
     .technology__hero-img {
@@ -142,12 +143,12 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1350px) {
 
     /* -- Technology -- */
 
     .technology__wrapper {
-        background-image: url(/assets/technology/background-technology-desktop.jpg);
+        background-image: url(../assets/technology/background-technology-desktop.jpg);
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -218,7 +219,11 @@
 
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1921px) {
+
+    .technology__content-wrapper {
+        max-width: 1920px;
+    }
 
 
     

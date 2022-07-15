@@ -3,7 +3,7 @@
 /* --- Crew Page --- */
 
 .crew__wrapper {
-    background-image: url(/assets/crew/background-crew-mobile.jpg);
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -86,8 +86,9 @@
 
 @media (min-width: 768px) {
 
+
     .crew__wrapper {
-        background-image: url('/assets/crew/background-crew-tablet.jpg');
+        background-image: url('../assets/crew/background-crew-tablet.jpg');
     }
 
     .crew__content-wrapper {
@@ -130,17 +131,18 @@
 
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1300px) {
 
-    .crew-space-title {
-        visibility: visible;
-        justify-self: start;
-        margin: 0 0 auto 0;
-    }
+    /* .crew-space-title { */
+        /* visibility: visible; */
+        /* justify-self: start; */
+        /* margin: 0 0 auto 0; */
+    /* } */
 
     .crew__wrapper {
-        background-image: url('/assets/crew/background-crew-desktop.jpg');
-        height: 100vh;
+        background-image: url('../assets/crew/background-crew-desktop.jpg');
+        min-height: 100vh;
+        height: 100%;
     }
 
     .crew__content-wrapper {
@@ -164,6 +166,7 @@
         align-items: flex-start;
         max-width: 600px;
         height: 100%;
+        max-height: 750px;
         justify-content: center;
     }
 
@@ -184,6 +187,7 @@
     .crew__image {
         width: 735px;
         height: 712px;
+        align-self: flex-end;
     }
 
 }

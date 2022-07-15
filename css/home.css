@@ -1,19 +1,17 @@
 /* -- Default Styles -- */
 
-
-
 .home__wrapper {
-    background-image: url('/assets/home/background-home-mobile.jpg');
+    background-image: url('../assets/home/background-home-mobile.jpg');
     background-color: var(--space-black);
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 
 .home__content {
     text-align: center;
@@ -60,7 +58,7 @@
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    margin-bottom: 48px;
+    margin: 0 auto 48px;
 }
 
 .home__button p {
@@ -72,10 +70,10 @@
 
 /* -- Tablet sized devices -- */
 
-@media (min-width: 768px) {
+@media (min-width: 658px) {
 
     .home__wrapper {
-        background-image: url('/assets/home/background-home-tablet.jpg');
+        background-image: url('../assets/home/background-home-tablet.jpg');
     }
 
     .home__content {
@@ -98,18 +96,15 @@
     .home__text {
         font-size: 16px;
         line-height: 28px;
+        margin: 0 auto;
     }
 
     .home__button {
         --button-size: 242px;
-        height: var(--button-size);
-        width: var(--button-size);
     }
 
     .home__button--hover {
         --button-hover-size: 392px;
-        height: var(--button-hover-size);
-        width: var(--button-hover-size);
         margin-bottom: 90px;
     }
 
@@ -118,10 +113,10 @@
 
 /* -- Desktop Devices -- */
 
-@media (min-width: 960px) {
+@media (min-width: 1350px) {
 
     .home__wrapper {
-        background-image: url('/assets/home/background-home-desktop.jpg');
+        background-image: url('../assets/home/background-home-desktop.jpg');
         min-height: 100vh;
         /* flex-direction: row;
         justify-content: center;
