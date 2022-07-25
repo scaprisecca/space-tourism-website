@@ -1,11 +1,14 @@
 
 /* -- Technology Page -- */
 
-.technology__wrapper {
+body {
     background-image: url("../assets/technology/background-technology-mobile.jpg");
-    background-color: var(--space-black);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.technology__wrapper {
+
     min-height: 100vh;
     height: 100%;
     width: 100%;
@@ -99,7 +102,7 @@
 
 @media (min-width: 768px) {
 
-    .technology__wrapper {
+    body {
         background-image: url(../assets/technology/background-technology-tablet.jpg);
     }
 
@@ -151,14 +154,15 @@
 
     /* -- Technology -- */
 
-    .technology__wrapper {
+    body {
         background-image: url(../assets/technology/background-technology-desktop.jpg);
+    }
+
+    .technology__wrapper {
         height: 100%;
         display: flex;
         flex-direction: column;
-    }
-
-    
+    }    
 
     .technology__content-wrapper {
         flex-direction: row;

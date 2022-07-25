@@ -2,10 +2,13 @@
 
 /* --- Crew Page --- */
 
-.crew__wrapper {
-    background-image: url(../assets/crew/background-crew-mobile.jpg);
-    background-repeat: no-repeat;
+body {
+    background-image: url('../assets/crew/background-crew-mobile.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.crew__wrapper {
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -86,8 +89,7 @@
 
 @media (min-width: 768px) {
 
-
-    .crew__wrapper {
+    body {
         background-image: url('../assets/crew/background-crew-tablet.jpg');
     }
 
@@ -140,8 +142,12 @@
         /* margin: 0 0 auto 0; */
     /* } */
 
-    .crew__wrapper {
+    body {
         background-image: url('../assets/crew/background-crew-desktop.jpg');
+    }
+
+    .crew__wrapper {
+        /* ? Does this mess up the sizing since the navbar is not in the wrapper */
         min-height: 100vh;
         height: 100%;
     }

@@ -20,6 +20,7 @@ Version: 1.0
 
 body {
     margin: 0;
+    background-color: var(--space-black);
 }
 
 .hidden {

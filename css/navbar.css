@@ -72,6 +72,8 @@
     justify-content: center;
 }
 
+
+
 @media (min-width: 768px) {
  
     /* -- navbar -- */
@@ -125,14 +127,51 @@
         display: none;
     }
     
-    .navbar__link:hover{
+    /* ! With dropdown added, the hover bar looks weird - will probably remove unless I can think of something to make it work better? */
+    /* .navbar__link:hover{
         border-bottom: 3px solid rgba(255, 255, 255, 0.5);
         padding-bottom: 39px;
-    }
+    } */
 
     .navbar__link:active {
         border-bottom: 3px solid var(--space-white);
     }
+
+    /* Styling for Dropdowns */
+
+    .navbar__dropdown {
+        display: none;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(81.5485px);
+    }
+
+    .navbar__item:hover .navbar__dropdown {
+        display: block;
+    }
+
+    .navbar__dropdown-item {
+        list-style-type: none;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .navbar__dropdown-item:hover {
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar__dropdown-item:hover .navbar__dropdown-link {
+        color: var(--space-purple);
+    }
+
+    .navbar__dropdown-link {
+        text-decoration: none;
+        color: var(--space-white);
+    }
+
 }
 
 @media (min-width: 992px) {
