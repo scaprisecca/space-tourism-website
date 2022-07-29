@@ -85,3 +85,41 @@ window.addEventListener('resize', function() {
 const ob = new ResizeObserver();
 
 ob.observe(navbarDistance);
+
+
+// Change Crew Page Indicator Dot
+let crewHeading = document.getElementsByClassName('crew__heading').textContent;
+const sliderIcons = document.querySelectorAll('.crew__slider-icon');
+
+console.log(crewHeading[0].textContent);
+
+function findCrewPageId(page) {
+  let crewPageId = 0;
+  switch (page) {
+    case 'Douglas Hurley':
+      crewPageId = 1;
+      console.log(crewPageId);
+      break;
+    case 'Victor Glover':
+      crewPageId = 2;
+      console.log(crewPageId);
+      break;
+    case 'Mark Shuttlewort':
+      crewPageId = 3;
+      console.log(crewPageId);
+      break;
+    case 'Anousheh Ansari':
+      crewPageId = 4;
+      console.log(crewPageId);
+      break;
+    default:
+      crewPageId = 1;
+      break;
+  }
+}
+
+findCrewPageId(crewHeading);
+
+// function setPageIndicator(id) {
+
+// }

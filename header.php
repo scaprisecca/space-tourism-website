@@ -20,12 +20,12 @@
     
             <img src="<?php echo get_theme_file_uri('/assets/shared/icon-hamburger.svg'); ?>" alt="Mobile menu toggle button" class="navbar__toggle">
             
-            <div class="navbar__spacer"></div>
+            <!-- Navbar Menu Start -->
     
             <ul class="navbar navbar--blur hidden">
                 <img src="<?php echo get_theme_file_uri('//assets/shared/icon-close.svg'); ?>" alt="Close mobile menu icon" class="navbar__close-icon">
                 <li class="navbar__item">
-                    <a href="" class="navbar__link"><span class="navbar__link--bold">00</span>Home</a>
+                    <a href="<?php echo the_permalink(6) ?>" class="navbar__link"><span class="navbar__link--bold">00</span>Home</a>
                 </li>
 
                 <li class="navbar__item">

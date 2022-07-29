@@ -8,8 +8,6 @@ body {
 }
 
 .technology__wrapper {
-
-    min-height: 100vh;
     height: 100%;
     width: 100%;
     display: flex;
@@ -220,6 +218,14 @@ body {
     .technology__heading {
         font-size: 56px;
         margin: 11px 0 17px 0;
+    }
+
+}
+
+@media (min-width: 1600px) {
+
+    .space-title {
+        margin-left: 260px;
     }
 
 }
