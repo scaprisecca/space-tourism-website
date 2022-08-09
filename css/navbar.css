@@ -50,6 +50,7 @@
 .navbar__link {
     color: var(--space-white);
     text-decoration: none;
+    transition: border 250ms ease-in-out;
 }
 
 .navbar__link--bold {
@@ -79,9 +80,9 @@
     /* -- navbar -- */
 
     .navbar {
+        position: unset;
         display: flex;
         flex-direction: row;
-        width: 450px;
         justify-content: space-between;
         align-items: center;
         padding: 0 48px;
@@ -114,24 +115,23 @@
         list-style: none;
         letter-spacing: 2.36px;
         font-size: 14px;
-        padding: 0;
+        padding: 0 1rem 0 0;
         margin: 0;
     }
     
     .navbar__link {
         color: var(--space-white);
         text-decoration: none;
+        transition: color 250ms ease-in-out;
     }
     
     .navbar__link--bold {
         display: none;
     }
     
-    /* ! With dropdown added, the hover bar looks weird - will probably remove unless I can think of something to make it work better? */
-    /* .navbar__link:hover{
-        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
-        padding-bottom: 39px;
-    } */
+    .navbar__link:hover{
+        color: var(--space-purple);
+    }
 
     .navbar__link:active {
         border-bottom: 3px solid var(--space-white);

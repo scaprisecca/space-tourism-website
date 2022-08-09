@@ -7,6 +7,7 @@
         wp_enqueue_style('space_main_files', get_stylesheet_uri());
         wp_enqueue_style('normalize', get_theme_file_uri('/css/normalize.css'));
         wp_enqueue_style('space_navbar', get_theme_file_uri('/css/navbar.css'));
+        wp_enqueue_style('space_blog', get_theme_file_uri('/css/blog-index.css'));
         wp_enqueue_style('space_home', get_theme_file_uri('/css/home.css'));
 
         if (is_singular('technology')) {
